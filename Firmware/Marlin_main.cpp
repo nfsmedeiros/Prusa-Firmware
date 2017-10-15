@@ -5375,8 +5375,8 @@ case 404:  //M404 Enter the nominal filament width (3mm, 1.75mm ) N<3.0> or disp
           #ifdef FILAMENTCHANGE_ZADD
             target[Z_AXIS]+= FILAMENTCHANGE_ZADD ;
 	    // XXX: Removed unused var 'TooLowZ'
-            if(target[Z_AXIS] < 10){
-              target[Z_AXIS]+= 10 ;
+            if(target[Z_AXIS] < 20){
+              target[Z_AXIS]+= 20 ;
             }
           #endif
      
